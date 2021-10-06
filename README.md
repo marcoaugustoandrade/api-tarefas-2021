@@ -11,3 +11,6 @@ docker-compose down
 
 ## Acessar o MongoDB (docker)
 docker exec -it mongodb-api-tarefas mongo
+
+## Como matar um processo rodando em uma determinada porta 
+kill -9 $(lsof -t -i:3007)
